@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Product list with cart</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
+        .attribution { font-size: 11px; text-align: center; }
+        .attribution a { color: hsl(228, 45%, 44%); }
+    </style> -->
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="items-container">
+            <h1 class="title">Desserts</h1>
+            <div class="itemsbox">
+                <!-- <div class="items">
+                    <div class="itemimg">
+                        <img src="./assets/images/image-waffle-desktop.jpg" alt="">
+                    </div>
+                    <div class="addtocart">
+                        <button type="button" class="addtocartbtn" onclick="selectitemfun(event,0)">
+                            <img src="./assets/images/icon-add-to-cart.svg" alt="">
+                            <span>Add to Cart</span>
+                        </button>
+                        <div class="qtybox" data-count="1">
+                            <a href="javascript:void(0);" class="count" onclick="updatecartitemsfun(event,0)">
+                                <ion-icon name="remove-outline"></ion-icon>
+                            </a>
+                            <span class="qty">1</span>
+                            <a href="javascript:void(0);" class="count" onclick="updatecartitemsfun(event,0)">
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="category">Waffle</p>
+                    <p class="name">Waffle with Berries</p>
+                    <p class="price">$ <span>6.50</span></p>
+                </div> -->
+            </div>
+        </div>
+        <div class="cart-container">
+            <h2 class="title">Your Cart ( <span class="quantity">0</span> )</h2>
+            <div class="cartitemsbox">
+                <div class="cartitems">
+                    <div class="emptyhover">
+                        <img src="./assets/images/illustration-empty-cart.svg" alt="">
+                        <p>Your added items will appear here</p>
+                    </div>
+                    <!-- <div class="cartitem">
+                        <div class="info">
+                            <p>Waffle with Berries</p>
+                            <p><span class="qtycount">1x</span> @ <span class="itemprice">$5.50</span> - <span class="qtyprice">$11.00</span></p>
+                        </div>
+                        <a href="javascript:void(0);" class="del-item"><ion-icon name="close-circle-outline"></ion-icon></a>
+                    </div> -->
+                </div>
+                <div class="totalbox">
+                    <div class="total">
+                        <span>Order Total</span>
+                        <span class="totalprice">$0.00</span>
+                    </div>
+                    <div class="msg">
+                        <img src="./assets/images/icon-carbon-neutral.svg" alt="">
+                        <p>This is a <b>carbon-neutral</b> delivery</p>
+                    </div>
+                    <button type="button" class="confirmbtn">Confirm Order</button>
+                </div>
+            </div>
+        </div>
+        <div class="confirmoverlay">
+            <div class="confirmbox">
+                <img src="./assets/images/icon-order-confirmed.svg" alt="">
+                <h1 class="title">Order Confirmed</h1>
+                <p class="subtitle">We hope you enjoy your food!</p>
+                <div class="confirmitemsbox">
+                    <div class="confirmitems">
+                        <!-- <div class="confirmitem">
+                            <div class="thumbnailimg">
+                                <img src="./assets/images/image-baklava-thumbnail.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <p>Waffle with Berries</p>
+                                <p><span class="qtycount">1x</span> @ <span class="itemprice">$5.50</span></p>
+                            </div>
+                            <div class="qtyprice">$11.00</div>
+                        </div> -->
+                    </div>
+                    <div class="confirmtotal">
+                        <span>Order Total</span>
+                        <span class="totalprice">$ 46.60</span>
+                    </div>
+                </div>
+                <button type="button" class="neworderbtn" onclick="startneworderfun()">Start New Order</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="./app.js"></script>
+</body>
+</html>
